@@ -1,0 +1,36 @@
+.added__list{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+.List{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap:3px;
+}
+.complete__button{
+    background-color: rgb(0, 214, 0);
+    color: white;
+    border: 1px solid rgb(0, 214, 0);
+    border-radius: 5px;
+}
+.complete__button:hover{
+    opacity: 0.7;
+}
+.delete__button{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 5px;
+}
+.delete__button:hover{
+    opacity: 0.7;
+}

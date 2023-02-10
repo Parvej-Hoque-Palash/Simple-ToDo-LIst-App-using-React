@@ -1,0 +1,13 @@
+.ListBuilder{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 15px 15px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+  }
+  .Input{
+    display: flex;
+    gap: 16px;
+  }

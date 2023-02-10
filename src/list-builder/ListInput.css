@@ -1,0 +1,12 @@
+.add__button{
+    background-color: rgb(0, 208, 255);
+    color: black;
+    border: 1px solid rgb(0, 208, 255);
+    border-radius: 5px;
+}
+.add__button:hover{
+    opacity: 0.7;
+}
+.Input{
+    padding: 5px 5px 15px 5px;
+}
