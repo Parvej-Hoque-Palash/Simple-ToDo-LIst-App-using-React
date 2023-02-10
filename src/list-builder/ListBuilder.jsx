@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import ListInput from './ListInput';
-import List from './List';
-import './ListBuilder.css';
+import React, { useState } from "react";
+import ListInput from "./ListInput";
+import List from "./List";
+import "./ListBuilder.css";
 
-function ListBuilder(){
-    const [newItem, setNewItem] = useState('');
-    const [list, setList] = useState([]);
+function ListBuilder() {
+  const [newItem, setNewItem] = useState("");
+  const [list, setList] = useState([]);
 
-  function handleOnChange(event){
+  function handleOnChange(event) {
     setNewItem(event.target.value);
   }
-  
-  function handleAddItem(){
+
+  function handleAddItem() {
     if (!newItem) {
-        return;
-      }
-  
-      if (list.some((item) => item.text === newItem)) {
-        //alert("Item already exists in the list");
-        return;
-      }
+      return;
+    }
+
+    if (list.some((item) => item.text === newItem)) {
+      //alert("Item already exists in the list");
+      return;
+    }
     setList([...list, { text: newItem, completed: false }]);
   }
 
@@ -38,19 +38,19 @@ function ListBuilder(){
     );
   }
 
-return(
+  return (
     <div className="ListBuilder">
-        <h3>Todo List App</h3>
-        <ListInput
-            handleAddItem={handleAddItem}
-            handleOnChange={handleOnChange}
-        />
-        <List
+      <h3>Todo List App</h3>
+      <ListInput
+        handleAddItem={handleAddItem}
+        handleOnChange={handleOnChange}
+      />
+      <List
         list={list}
         handleCompleteItem={handleCompleteItem}
         handleDeleteItem={handleDeleteItem}
-        />
-      </div>
-      );
+      />
+    </div>
+  );
 }
 export default ListBuilder;
